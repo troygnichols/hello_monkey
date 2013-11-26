@@ -1,0 +1,9 @@
+<p>Hi!  Click the button to get a call.</p>
+
+<form method="post" action="https://ACdeb7b15b66088775d7087b787b412f34:3a542782fee13914e727e8e9e2651bcd@api.twilio.com/2010-04-01/Accounts/ACdeb7b15b66088775d7087b787b412f34/Calls">
+  <input type="hidden" name="From" value="+12548704394"/>
+  <input type="hidden" name="To" value="+12144052142"/>
+  <input type="hidden" name="Url" value="<%= greeting_url(:welcome) %>"/>
+  <input type="hidden" name="Method" value="GET"/>
+  <input type="submit" value="Call me"/>
+</form>
